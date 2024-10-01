@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Aplicação Flask</title>
+    <title>Calculadora Flask</title>
 </head>
 <body>
-    <h1>Bem-vindo à Minha Aplicação Flask!</h1>
+    <h1>Calculadora</h1>
+    <form method="post">
+        <input type="number" name="num1" required placeholder="Número 1">
+        <input type="number" name="num2" required placeholder="Número 2">
+        <select name="operation">
+            <option value="add">Adicionar</option>
+            <option value="subtract">Subtrair</option>
+            <option value="multiply">Multiplicar</option>
+            <option value="divide">Dividir</option>
+        </select>
+        <button type="submit">Calcular</button>
+    </form>
+    
 </body>
 </html>
